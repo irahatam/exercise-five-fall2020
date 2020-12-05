@@ -2,7 +2,7 @@ import React from "react";
 
 function Header({ loggedIn, LogoutFunction }) {
   return (
-    <header>
+    <header className="Header">
       <nav>
         <a href="/">User Profile</a>
         <a href="/login">Login</a>
