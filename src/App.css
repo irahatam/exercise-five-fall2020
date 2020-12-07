@@ -14,7 +14,11 @@
   cursor: pointer;
   margin: 0 10px;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.Header nav a:hover {
+  color: blue;
 }
 
 .LoginForm {
