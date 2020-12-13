@@ -97,11 +97,11 @@ function App() {
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .then(function (response) {
-        console.log("LOGIN RESPONSE", response);
+        console.log("VALID ACCOUNT CREATED FOR:", email, response);
         setLoggedIn(true);
       })
       .catch(function (error) {
-        console.log("LOGIN ERROR", error);
+        console.log("ACCOUNT CREATION FAILED", error);
       });
   }
 
