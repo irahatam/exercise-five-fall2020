@@ -64,11 +64,10 @@ function App() {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(function (response) {
-        console.log("LOGIN RESPONSE", response);
         setLoggedIn(true);
       })
       .catch(function (error) {
-        console.log("LOGIN ERROR", error);
+        console.warn("LOGIN ERROR", error);
       });
   }
 
@@ -83,7 +82,7 @@ function App() {
         setUserInformation({});
       })
       .catch(function (error) {
-        console.log("LOGOUT ERROR", error);
+        console.warn("LOGOUT ERROR", error);
       });
   }
 
@@ -97,11 +96,10 @@ function App() {
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .then(function (response) {
-        console.log("VALID ACCOUNT CREATED FOR:", email, response);
         setLoggedIn(true);
       })
       .catch(function (error) {
-        console.log("ACCOUNT CREATION FAILED", error);
+        console.warn("ACCOUNT CREATION FAILED", error);
       });
   }
 
